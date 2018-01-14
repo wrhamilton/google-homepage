@@ -1,0 +1,9 @@
+html {
+  font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: https://fonts.googleapis.com/css?family=Open+Sans
+  }
+
+.container {
+	display: grid;
+	grid-template: repeat(25 1fr) / repeat(25 1fr);
+}
