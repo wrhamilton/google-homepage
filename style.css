@@ -3,7 +3,53 @@ html {
   font-family: https://fonts.googleapis.com/css?family=Open+Sans
   }
 
-.container {
+.page_all {
 	display: grid;
-	grid-template: repeat(25 1fr) / repeat(25 1fr);
+	grid-template-areas: 
+	"header"
+	"nav_bar"
+	"top_result"
+	"all_results"
+	"related_searches"
+	"page_results"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(7, minmax(150px, 1fr));
+	height: 100%;
+	width: 100%;
+}
+
+.header {
+	grid-area: "header";
+	color: red;
+}
+
+.nav_bar {
+	grid-area: nav_bar;
+	color: green;
+}
+
+.top_result {
+	grid-area: top_result;
+	color: purple;
+}
+
+.all_results {
+	grid-area: all_results;
+	color: yellow;
+}
+
+.related_searches {
+	grid-area: related_searches;
+	color: pink;
+}
+
+.page_results {
+	grid-area: page_results;
+	color: brown;
+}
+
+.footer {
+	grid-area: footer;
+	color: black;
 }
