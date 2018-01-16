@@ -8,22 +8,14 @@ html {
 
 .page_all {
 	display: grid;
-	grid-template-areas: 
-	"header"
-	"nav_bar"
-	"top_result"
-	"all_results"
-	"related_searches"
-	"page_results"
-	"footer";
 	grid-template-columns: 100%;
-	grid-template-rows: repeat(7, minmax(100px, 1fr));
-	height: 100%;
-	width: 100%;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .header {
-	grid-area: "header";
+	display: grid;
+	grid-template-rows: 50px 50px;
+	grid-template-columns: 50px 50px;
 	color: red;
 	background-color: #f9f9f9;
 }
@@ -45,7 +37,6 @@ html {
 }
 
 .nav_bar {
-	grid-area: nav_bar;
 	color: green;
 	background-color: #f9f9f9;
 	border-bottom: 1px solid rgb(240,240,240);
@@ -88,7 +79,6 @@ html {
 }
 
 .up_res {
-	grid-area: top_result;
 	color: purple;
 }
 
@@ -101,7 +91,6 @@ html {
 }
 
 .all_res {
-	grid-area: all_results;
 	color: yellow;
 }
 
@@ -146,7 +135,6 @@ html {
 }
 
 .rel_srch {
-	grid-area: related_searches;
 	color: pink;
 }
 
@@ -167,7 +155,6 @@ html {
 }
 
 .pg_res {
-	grid-area: page_results;
 	color: brown;
 }
 
@@ -180,7 +167,6 @@ html {
 }
 
 .footer {
-	grid-area: footer;
 	color: black;
 	background-color: #f9f9f9;
 	border-top: 1px solid rgb(240,240,240)
